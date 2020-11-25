@@ -1,0 +1,227 @@
+/* Master styles*/
+body {
+	font-family: "Lato" , sans-serif;
+	margin: 0px;
+}
+
+.Container {
+	display: grid;
+	
+}
+
+/* Nav styles*/
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: blue;
+}
+
+.header {
+	display: flex;
+	justify-content: left-side;
+}
+.left-side {
+	display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+.active-nav-link {
+	border-bottom: none;
+}
+
+.active-nav-link a:hover {
+	color: black !important;
+}
+
+
+/* Portfolio styles*/
+
+
+.portfolio-items-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		
+}
+	
+.portfolio-item-wrapper {
+	position: relative;
+	padding: 30px;
+	
+}	
+
+.portfolio-img-background {
+	height: 400px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+.Dashboard-portfolio-img-background {
+	height: 400px;
+	width: 100%;
+	background-size: circle;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+.Integrations-portfolio-img-background {
+	height: 400px;
+	width: 100%;
+	background-size: circle;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+.img-text-wrapper {
+	position: absolute;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.logo-wrapper img {
+	width: 30%;
+	margin-bottom: 20px;
+}
+.img-text-wrapper .subtitle {
+	font-weight: 600;
+	transition: 1s;
+	color: transparent;
+}
+
+
+.img-text-wrapper:hover .subtitle {
+	font-weight: 600;
+	color: lightseagreen;
+}
+
+.img-darken {
+	transition: 1s;
+	filter: brightness(10%);
+	
+	
+}
+	
+/* About page styles*/
+
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+background-color: lightseagreen;	
+}
+
+.Dashboard-two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+background-color: lightseagreen;	
+}
+
+.Integrations-two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+background-color: lightseagreen;	
+}
+
+.profile-image-wrapper img {
+	width: 100%;
+}
+
+.profile-content-wrapper {
+	padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+	color: lightseagreen;
+}
+
+.Dashboard-profile-content-wrapper {
+	padding: 30px;
+}
+
+.Dashboard-profile-content-wrapper h2 {
+	padding: 30px;
+}
+
+.Integrations-profile-content-wrapper {
+	padding: 30px;
+}
+
+.Integrations-profile-content-wrapper h2 {
+	padding: 20px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+form.Favorite input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: centre;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.Favorite button {
+  float: centre;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  text: submit;
+}
+
+form.Favorite button:hover {
+  background: #0b7dda;
+  
+}
+
+form.Favorite::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
